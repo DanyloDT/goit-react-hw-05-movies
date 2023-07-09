@@ -1,0 +1,16 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+
+  font-size: 17px;
+  list-style: decimal inside;
+}
+.link {
+  color: var(--black-color);
+  transition: color var(--transition), text-shadow var(--transition);
+}
+.link:hover {
+  color: var(--blue-color);
+}

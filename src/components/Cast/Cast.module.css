@@ -1,0 +1,27 @@
+.castList {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+}
+.castItem {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-basis: calc((100% - (15px * 4)) / 5);
+  box-shadow: var(--box-shadow);
+}
+
+.blockName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+}
