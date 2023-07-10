@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import css from './Search.module.css';
 
 const Search = ({ onSubmit }) => {
@@ -30,3 +31,7 @@ const Search = ({ onSubmit }) => {
 };
 
 export default Search;
+
+Search.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};

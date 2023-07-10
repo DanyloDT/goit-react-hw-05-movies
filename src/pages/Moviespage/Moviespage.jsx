@@ -14,11 +14,12 @@ const Moviespage = () => {
   const handleSubmit = value => {
     setSearchParams({ query: value });
   };
+
   if (!movies) return;
   return (
     <>
       <Search onSubmit={handleSubmit} />
-      {query && <MoviList movies={movies} />}
+      <MoviList movies={movies} />
     </>
   );
 };
